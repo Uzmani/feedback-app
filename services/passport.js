@@ -15,7 +15,7 @@ passport.deserializeUser((id, done) => {
   });
 });
 
-console.log('googleClientID: ', keys.googleClientID);
+console.log('googleClientID: ', process.env.GOOGLE_CLIENT_ID);
 
 passport.use(
   new GoogleStrategy(
